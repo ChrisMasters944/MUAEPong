@@ -51,7 +51,7 @@ soundArray.push(paddleSound);
 
 export var scoreSound = new soundFile("score.mp3");
 soundArray.push(scoreSound);
-scoreSound.player.volume.value = 4;
+scoreSound.player.volume.value = +8;
 
 
 export var ambientSound = new soundFile("brown.mp3");
