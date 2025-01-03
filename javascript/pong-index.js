@@ -62,6 +62,11 @@ paddlesReset();
 
 //STARTUP EVENTS
 ambientSound.play();
+villageMusic.play();
+
+
+
+
 
 //RUNNING PROCESSES (updated every frame of the game)
 function gameProcess() {
@@ -96,14 +101,6 @@ function gameProcess() {
     scoreSound.play();
   }
   //this is a persistant event so it must be checked and checked if it changed
-  if (rightScoreHigher.state && rightScoreHigher.changed) {
-    adventureMusic.play();
-    villageMusic.stop();
-  }
-  if (leftScoreHigher.state && leftScoreHigher.changed) {
-    villageMusic.play();
-    adventureMusic.stop();
-  }
 }
 
 ///////////////////////////////////////////////////////////////
